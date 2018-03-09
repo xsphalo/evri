@@ -1,0 +1,13 @@
+<!--pages/xundetail/xundetail.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class='allpage'>
+  <view class='contitle'>{{newsdetails.title}}</view>
+  <view class='contime'>{{newsdetails.created_at}}</view>
+  <view class='contentimg'>
+    <image src="{{imgurl+newsdetails.photos}}"></image>
+  </view>
+  <view class='newscon'>
+    <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+  </view>
+  <view class='nomore'>没有更多内容了</view>
+</view>

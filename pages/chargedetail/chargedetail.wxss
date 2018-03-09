@@ -1,0 +1,40 @@
+/* pages/chargedetail/chargedetail.wxss */
+.allpage{
+  background: #f2f2f2;
+  height: 100%;
+}
+.detailist{
+  background: #fff;
+  height: 120rpx;
+  padding: 0 20rpx;
+  margin-bottom: 20rpx;
+}
+.detailmsg text{
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
+}
+.inventer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.venter text{
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
+  display: inline-block;
+
+}
+.venter text:first-child{
+  margin-right: 10rpx;
+}
+.timers{
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
+}
+.nomore{
+  padding-bottom: 8rpx;
+}

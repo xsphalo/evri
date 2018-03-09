@@ -1,0 +1,90 @@
+/* pages/projectdetail/projectdetail.wxss */
+.allpage{
+  padding-top: 20rpx;
+}
+.pronames{
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 16px;
+  color: #666;
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
+  padding: 0 20rpx;
+}
+.allpad{
+  /* padding: 0 20rpx; */
+  /* background: #fff; */
+}
+.jindutiao image{
+  width: 26rpx;
+  height: 26rpx;
+}
+.jindutiao text{
+  display: block;
+  background: #38c3ff;
+  width: 130rpx;
+  height: 4rpx;
+}
+.jindutiao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 70rpx;
+}
+.jindutiao text:nth-child(6){
+  background: #999;
+}
+.jindufot{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5rpx;
+  margin-top: 10rpx;
+}
+.jindufot text{
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+  display: block;
+}
+.jindu{
+  height: 90rpx;
+  padding: 0 20rpx;
+  padding-top: 30rpx;
+  background: #fff;
+}
+.proaddress{
+  font-size: 16px;
+  color: #666;
+  line-height: 46rpx;
+  background: #fff;
+  /* height: 130rpx; */
+  /* border-top: 1px solid #e6e6e6; */
+  /* padding-top: 30rpx; */
+}
+.detailmsg{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 186rpx;
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  background: #fff;
+}
+.detailmsg text{
+  font-size: 16px;
+  color: #666;
+  line-height: 48rpx;
+  display: block;
+
+}
+.smsgs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20rpx;
+  height: 200rpx;
+  padding: 26rpx 20rpx;
+  background: #fff;
+}
+

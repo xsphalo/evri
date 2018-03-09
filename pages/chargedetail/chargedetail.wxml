@@ -1,0 +1,21 @@
+<!--pages/chargedetail/chargedetail.wxml-->
+<view class='allpage'>
+  <view class='detailist' wx:for="{{commission}}" wx:key="keys">
+    <view class='detailmsg'>
+      <text wx:if="{{item.types == 2}}">+</text>
+      <text wx:if="{{item.types == 4}}">-</text>
+      <text>￥{{item.amount}}</text>
+    </view>
+    <view class='inventer'>
+      <view class='venter' wx:if="{{item.types == 2}}">
+        <text>被邀请人：</text>
+        <text>{{item.invite.nickname}}</text>
+      </view>
+      <view class='venter' wx:if="{{item.types == 4}}">
+        <text>佣金提现</text>
+      </view>
+      <view class='timers'>{{item.created_at}}</view>
+    </view>
+  </view>
+  <view class='nomore' wx:if="{{nomore}}">已经到底了</view>
+</view>

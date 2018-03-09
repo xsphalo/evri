@@ -1,0 +1,72 @@
+/* pages/projectcharge/projectcharge.wxss */
+.places{
+  font-size: 16px;
+  color: #ccc;
+  font-weight: normal;
+
+}
+.procashmsg{
+  background: #fff;
+  padding: 0 20rpx;
+  height: 166rpx;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.procashmsg view:first-child{
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
+
+}
+.procashmsg view.cashmsg text:first-child{
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
+  
+}
+.procashmsg view.cashmsg text:last-child{
+  font-size: 16px;
+  color: #fb8400;
+  font-weight: normal;
+}
+.chargemsg{
+  background: #fff;
+  margin-top: 20rpx;
+}
+.iptin{
+  color: #333;
+  height: 90rpx;
+  background: #fff;
+  border-bottom: .5px solid #e6e6e6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.iptin text{
+  display: block;
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
+  width: 160rpx;
+  text-align: center;
+  margin-right: 18rpx;
+}
+.iptin input{
+  background: #fff;
+  border: 0;
+  height: 90rpx;
+  width: 400rpx;
+  color: #333;
+}
+.tixian{
+  margin-top: 100rpx;
+}
+.tixian button{
+  background: #38c3ff;
+  width: 710rpx;
+  height: 90rpx;
+  color: #fff;
+  line-height: 90rpx;
+  text-align: center;
+}

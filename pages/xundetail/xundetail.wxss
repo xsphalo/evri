@@ -1,0 +1,40 @@
+/* pages/xundetail/xundetail.wxss */
+.contitle{
+  text-align: center;
+  font-size: 22px;
+  color: #333;
+  font-weight: 700;
+  line-height: 60rpx;
+  padding-top: 50rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx; 
+}
+.contime{
+  font-size: 16px;
+  color: #999;
+  font-weight: normal;
+  padding:  0 20rpx;
+  padding-top: 30rpx;
+}
+.contentimg{
+  text-align: center;
+  padding: 0 20rpx;
+}
+.contentimg image{
+  width: 710rpx;
+  height: 410rpx;
+  display: block;
+  margin-top: 40rpx;
+  margin-bottom: 30rpx;
+  text-align: center
+}
+.newscon{
+  font-size: 18px;
+  color: #333;
+  font-weight: normal;
+  line-height: 48rpx;
+}
+ .wxParse-inline{
+  
+  padding: 0 20rpx;
+}

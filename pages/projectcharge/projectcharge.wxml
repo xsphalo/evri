@@ -1,0 +1,31 @@
+<!--pages/projectcharge/projectcharge.wxml-->
+<view class='allpage'>
+  <view class='procashmsg'>
+    <view>{{title}}</view>
+    <view class='cashmsg'>
+      <text>项目佣金：</text>
+      <text>￥{{amount}}</text>
+    </view>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view class='chargemsg'>
+      <view class='iptin'>
+        <text>手机号码</text>
+        <input type='number' placeholder='请输入' placeholder-class='places' name="mobile" bindblur='getmobile' value="{{info.mobile}}"></input>
+      </view>
+      <view class='iptin'>
+        <text>开户姓名</text>
+        <input type='text' placeholder='请输入' placeholder-class='places' name="acct_name" bindblur='getname' value="{{info.acct_name}}"></input>
+      </view>
+      <view class='iptin'>
+        <text>银行卡号</text>
+        <input type='number' placeholder='请输入' placeholder-class='places' name="bankno" bindblur='getbankno' value='{{info.bankno}}'></input>
+      </view>
+    </view>
+    
+    <view class='tixian'>
+      <button type='button' formType="submit">立即提现</button>
+    </view>
+    <view class='mentionner'>提示：因支付银行渠道和平台维护费用，将会扣取{{monnumb.handing}}%的手续费，最高封顶200，低于{{monnumb.withdrawmin}}不可提现。</view>
+  </form>
+</view>

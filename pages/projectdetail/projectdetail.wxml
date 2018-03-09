@@ -1,0 +1,33 @@
+<!--pages/projectdetail/projectdetail.wxml-->
+<view class='allpage'>
+  <view class='allpad'>
+    <view class='pronames'>{{prodet.title}}</view>
+    <view class='jindu'>
+      <view class='jindutiao'>
+        <image src="{{progressone}}"></image>
+        <text style="background:{{lineo?'#38c3ff':'#999'}}"></text>
+        <image src="{{progresstwo}}"></image>
+        <text style="background:{{linet?'#38c3ff':'#999'}}"></text>
+        <image src="{{progressthree}}"></image>
+        <text style="background:{{liner?'#38c3ff':'#999'}}"></text>
+        <image src="{{progressfour}}"></image>
+      </view>
+      <view class='jindufot'>
+        <text>核实中</text>
+        <text>跟进中</text>
+        <text>已签约</text>
+        <text>已完成</text>
+      </view>
+    </view>
+    <view class='smsgs'>
+      <view class='proaddress'>项目负责人：{{prodet.charge_name}}</view>
+      <view class='proaddress'>负责人号码：{{prodet.charge_mobile}}</view>
+      <view class='proaddress'>项目地址  ：{{prodet.address}}</view>
+    </view>
+  </view>
+  <view class='detailmsg'>
+    <text>申报类型：{{prodet.cid}}</text>
+    <text>申报时间：{{prodet.created_at}}</text>
+    <text>项目编号：{{prodet.orderno}}</text>
+  </view>
+</view>

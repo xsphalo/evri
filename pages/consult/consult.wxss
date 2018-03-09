@@ -1,0 +1,133 @@
+/* pages/consult/consult.wxss */
+.important{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.important text:first-child{
+  color: #333;
+  font-weight: normal;
+  font-size: 18px;
+  display: block;
+}
+.important text:last-child{
+  background: #38c3ff;
+  width: 40rpx;
+  height: 8rpx;
+  border-radius: 4rpx 4rpx;
+  display: block;
+  opacity: 0;
+}
+.active text:first-child{
+  color: #38c3ff;
+}
+.active text:last-child{
+  opacity: 1;
+}
+.select{
+  height: 100rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.comitsa{
+  text-align: left;
+  padding: 0 20rpx;
+  background: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #e6e6e6;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.comitsa text:first-child{
+  width: 6rpx;
+  height: 28rpx;
+  background: #38c3ff;
+  margin-right: 10rpx;
+  display: block;
+}
+.comitsa text:last-child{
+  font-size: 14px;
+  color: #333;
+  display: block;
+}
+
+.allmethod button{
+  width: 160rpx;
+  height: 44rpx;
+  background: #eee;
+  border: 0;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
+  text-align: center;
+  line-height: 44rpx;
+  border-radius: 22rpx 22rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+/* .allmethod navigator{
+  margin-right: 20rpx;
+} */
+.methods{
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.allmethod{
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pic image{
+  width: 210rpx;
+  height: 150rpx;
+  border-radius: 5px;
+  display: block;
+}
+.newscont{
+  height: 210rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0 20rpx;
+}
+.newstitle{
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  flex-direction: column;
+  height: 210rpx;
+  width: 500rpx;
+}
+.newstitle text:first-child{
+  font-size: 16px;
+  color: #000;
+  font-weight: normal;
+  display: block;
+}
+.newstitle text:last-child{
+  font-size: 12px;
+  color: #999;
+  font-weight: normal;
+  display: block;
+}
+button:after{
+  border: 0;
+}
+.btnact{
+  background: #38c3ff !important;
+  color: #fff !important;
+}

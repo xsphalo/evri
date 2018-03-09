@@ -1,0 +1,51 @@
+/* pages/charge/charge.wxss */
+.allpage{
+  padding-top: 20rpx;
+  height: 100%;
+  background: #f2f2f2;
+}
+.cashlist{
+  background: #fff;
+  height: 152rpx;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.outercon{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+.itemfont text{
+  font-size: 16px;
+  color: #fb8400;
+  font-weight: normal;
+}
+.oterfonta text{
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+  display: inline-block;
+}
+.oterfonta text:first-child{
+  margin-right: 15rpx;
+}
+.chargebtn button{
+  background: #38c3ff;
+  color: #fff;
+  width: 150rpx;
+  height: 60rpx;
+  outline: none;
+  font-size: 14px;
+  padding: 0;
+  line-height: 60rpx;
+}
+.chargebtn button:after{
+  border: 0;
+}
+.mentionner{
+  padding-top:10rpx;
+}

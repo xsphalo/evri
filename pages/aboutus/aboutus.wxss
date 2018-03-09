@@ -1,0 +1,8 @@
+/* pages/aboutus/aboutus.wxss */
+.allpage{
+  height: 100%;
+  background: #f2f2f2;
+}
+.wxParse-inline{
+  padding: 20rpx;
+}

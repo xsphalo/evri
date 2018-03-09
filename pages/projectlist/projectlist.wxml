@@ -1,0 +1,38 @@
+<!--pages/projectlist/projectlist.wxml-->
+<view class='allpage' id="allpage">
+  <view class='findhead'>
+    <view class="hse {{status==''||status =='a'?'active':''}}" data-status='a' bindtap='changestatus'>
+      <text>全部</text>
+      <text class='botline'></text>
+    </view>
+    <view class="hse {{status==2||status==3?'active':''}}" data-status='2' data-status='3' bindtap='changestatus'>
+      <text>进行中</text>
+      <text class='botline'></text>
+    </view>
+    <view class="hse {{status==4?'active':''}}" data-status='4' bindtap='changestatus'>
+      <text>已完成</text>
+      <text class='botline'></text>
+    </view>
+  </view>
+  <view class='prolists' wx:for="{{prolist}}" wx:key="keys">
+    <view class='projectmsg'>
+      <view class='projectname'>
+        <image src="/images/xiangmu_icon.png"></image>
+        <view class='times'>
+          <text>{{item.title}}</text>
+          <text>申报时间：{{item.created_at}}</text>
+          <text>项目编号：{{item.orderno}}</text>
+        </view>
+      </view>
+      <view class='status' wx:if='{{item.status=="1"}}'>核实中</view>
+      <view class='status' wx:if='{{item.status=="2"}}'>跟进中</view>
+      <view class='status' wx:if='{{item.status=="3"}}'>已签约</view>
+      <view class='status' wx:if='{{item.status=="4"}}'>成功</view>
+    </view>
+    <view class='btns'>
+      <button type='button' open-type='contact'>联系客服</button>
+      <button type='button' data-id="{{item.id}}" bindtap='turnid' data-status="{{item.status}}">查看详情</button>
+    </view>
+  </view>
+  <view class='nomore'>没有订单了</view>
+</view>

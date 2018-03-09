@@ -1,0 +1,25 @@
+<!--pages/charge/charge.wxml-->
+<view class='allpage'>
+  <view class='mentionner'>提示：预计3个工作日到账。</view>
+  <view class='cashlist' wx:for="{{prolist}}" wx:key="keys">
+    <view class='outercon'>
+      <view class='itemfont'>
+        <text>+￥{{item.amount}}</text>
+      </view>
+      <view class='oterfonta'>
+        <text>项目名称：</text>
+        <text>{{item.project.title}}</text>
+      </view>
+      <view class='oterfonta'>
+        <text>完成日期：</text>
+        <text>{{item.created_at}}</text>
+      </view>
+    </view>
+    <view class='chargebtn'>
+      <button wx:if="{{item.status == '1'}}" style='background:#ccc;color:#fff;' disabled='true'>冻结中</button>
+      <button wx:if="{{item.status == '2'}}" bindtap='tocharge' data-id="{{item.id}}" data-index="{{index}}">立即提现</button>
+      <button wx:if="{{item.status == '3'}}" style='background:#ccc;color:#fff;' disabled='true'>已提现</button>
+    </view>
+  </view>
+  <view class='nomore' wx:if="{{nomore}}">已经到底啦</view>
+</view>

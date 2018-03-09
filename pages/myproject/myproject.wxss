@@ -1,0 +1,127 @@
+/* pages/myproject/myproject.wxss */
+.allpage{
+  height: 100%;
+  padding-top: 20rpx;
+}
+.placeclass{
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 400;
+}
+.ipts{
+  height: 90rpx;
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.ipts input{
+  color: #333;
+  font-size: 14px;
+}
+.ipts text{
+  width: 180rpx;
+  font-size: 14px;
+  color: #333;
+  display: block;
+}
+.lei{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 0 20rpx;
+  height: 90rpx;
+  border-bottom: 1px solid #e6e6e6;
+}
+.lei view:first-child{
+  font-size: 14px;
+  color: #333;
+}
+.choice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.choice image{
+  width: 18rpx;
+  height: 30rpx;
+}
+.choice text{
+  font-size: 14px;
+  color: #ccc;
+  font-weight: normal;
+  margin-right: 10rpx;
+}
+.choice text.miaoshi{
+  width: 366rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: right;
+}
+.martop{
+  margin-top: 20rpx;
+}
+.ipts image{
+  width: 32rpx;
+  height: 42rpx;
+  /* margin-left: 50rpx; */
+  padding: 40rpx;
+  padding-left: 90rpx;
+  padding-right: 0;
+}
+.heightin{
+  height: 130rpx;
+}
+.heightin textarea{
+  height: 100rpx;
+  width: 400rpx;
+   font-size: 14px; 
+   vertical-align: buttom;
+   padding-top: 30rpx;
+   color: #333;
+}
+.confirm{
+  padding-top: 50rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.confirm button{
+  width: 750rpx;
+  height: 98rpx;
+  background: #ccc;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 0;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  line-height: 98rpx;
+}
+.confirm button:after{
+  border: 0;
+}
+.xnobrd{
+  border-bottom: 0;
+}
+.xnobrd canvas{
+  height: 90rpx;
+  width: 240rpx;
+}
+.inifycode{
+  overflow: hidden
+}
+.inifycode input{
+  width: 230rpx;
+}
+.inifycode image{
+  width: 32rpx;
+  height: 32rpx;
+  padding-left: 20rpx;
+}

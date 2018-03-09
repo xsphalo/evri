@@ -1,0 +1,10 @@
+<!--pages/letsnote/letsnote.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class='allpage'>
+  <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+  <view class='nomore'>没有更多内容了</view>
+  <view class='notices' bindtap='tomyproject'>
+    <!-- <view>请仔细阅读项目须知在进行项目填写</view> -->
+    <button>项目填写</button>
+  </view>
+</view>

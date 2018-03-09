@@ -1,0 +1,36 @@
+/* pages/letsnote/letsnote.wxss */
+.notices{
+  /* position: fixed;
+  right: 0;
+  bottom: 100rpx; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20rpx;
+  margin-top: 40rpx;
+}
+.notices image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.notices view{
+  font-size: 24rpx;
+  color: #999;
+  background: #fff;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  width: 500rpx;
+}
+.notices button{
+  background: #38c3ff;
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: bold;
+  line-height: 88rpx;
+  height: 88rpx;
+  width: 100%;
+}
+ /* .nomore{
+  margin-bottom: 89rpx;
+}  */

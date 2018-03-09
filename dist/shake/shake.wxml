@@ -1,0 +1,6 @@
+<!--shake.wxml-->
+<template name="shake">
+<modal title='摇一摇' confirm-text='确定' no-cancel hidden='{{shakeInfo.gravityModalHidden}}' bindconfirm='shake' confirm-color='#1f4ba5'>
+  摇一摇，抢会员卡
+</modal>
+</template>

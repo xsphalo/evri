@@ -1,0 +1,64 @@
+<!--pages/myproject/myproject.wxml-->
+<view class='allpage'>
+  <form bindsubmit="formSubmit">
+    <view class='ipts'>
+      <text>项目负责人</text>
+      <input placeholder='请输入项目负责人姓名' placeholder-class='placeclass' type="text" name="charge_name" bindinput='chargename' value='{{clears}}'></input>
+    </view>
+    <view class='ipts'>
+      <text>负责人号码</text>
+      <input placeholder='请输入负责人号码' placeholder-class='placeclass' type='number' name="charge_mobile" bindinput='chargemobile' value='{{clears}}'></input>
+    </view>
+    <view class='ipts'>
+      <text>项目名称</text>
+      <input placeholder='请输入项目名称' placeholder-class='placeclass' type="text" name="title" bindinput='title' value='{{clears}}'></input>
+    </view>
+    <view class='lei'>
+      <view>项目类型</view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{projectsall}}" range-key='title'>
+        <view class='choice'>
+          <text wx:if="{{tfont}}">选择类型</text>
+          <text>{{projectsall[index].title}}</text>
+          <image src="/images/breadcrumbs_icon.png"></image>
+        </view>
+      </picker>
+    </view>
+    <view class='ipts heightin'>
+      <text>项目地址</text>
+      <textarea placeholder='请输入或选择项目的详细地址' placeholder-class='placeclass' type="text" name="address" bindinput='address' value="{{country}}"></textarea>
+      <image src="/images/add_icon.png" bindtap='chooseLocation'></image>
+    </view>
+    <navigator url='/pages/remarks/remarks'>
+      <view class='lei xnobrd'>
+        <view>添加备注</view>
+        <view class='choice'>
+          <text wx:if="{{mende}}">描述问题</text>
+          <text wx:if="{{!mende}}" class='miaoshi'>{{description}}</text>
+          <image src="/images/breadcrumbs_icon.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <view class='ipts martop'>
+      <text>线索提交人</text>
+      <input placeholder='请输入您的姓名' placeholder-class='placeclass' type="text" name="commit_name" bindblur='commitname' value='{{clears}}'></input>
+    </view>
+    <view class='ipts'>
+      <text>线索人号码</text>
+      <input placeholder='请输入您的手机号' placeholder-class='placeclass' type="number" name="commit_mobile" bindinput='commitmobile' value='{{clears}}'></input>
+    </view>
+    <!-- <view class='ipts'>
+      <text>线索人微信</text>
+      <input placeholder='请输入您的微信号' placeholder-class='placeclass' type="text" name="commit_wx" bindinput='commitwx' value='{{clears}}'></input>
+    </view> -->
+    <view class='ipts xnobrd inifycode'>
+      <text>验证码验证</text>
+      <input placeholder='请填写验证码' placeholder-class='placeclass' type="number" name="codex" value='{{clears}}' bindinput='codes'></input>
+      <canvas style="width:240rpx;height:90rpx;" canvas-id="canvas" bindtap='regist' disable-scroll="false"></canvas>
+      <image src="/images/refresh.png" bindtap='regist'></image>
+    </view>
+
+    <view class="confirm">
+      <button formType="submit" style="background:{{bgstyle?'#38c3ff':'#ccc'}}">确认提交</button>
+    </view>
+  </form>
+</view>

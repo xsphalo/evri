@@ -1,0 +1,1 @@
+exports.Shake = require('./shake/shake');

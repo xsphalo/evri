@@ -1,0 +1,64 @@
+<!--pages/consult/consult.wxml-->
+<view class='allpage'>
+  <view class='select'>
+    <view class="important {{status==1?'active':''}}" data-status="1" bindtap='getstatus'>
+      <text>重点领域</text>
+      <text class='botline'></text>
+    </view>
+    <view class="important {{status==2?'active':''}}" data-status="2" bindtap='getanli'>
+      <text>经典案例</text>
+      <text class='botline'></text>
+    </view>
+  </view>
+  <view wx:if="{{showhide}}">
+    <view class='methods'>
+      <view class='comitsa'>
+        <text></text>
+        <text>选择类型</text>
+      </view>
+      <view class='allmethod'>
+        <block wx:for="{{cates}}" wx:key="keys">
+            <button data-cid="{{item.id}}" bindtap='getclasscid' class="{{cid==item.id?'btnact':''}}">{{item.title}}</button>
+        </block>
+      </view>
+    </view>
+    <block wx:for="{{domains}}" wx:key="keys">
+      <view class='newscont' data-id="{{item.id}}" bindtap='todetail'>
+        <view class='newstitle'>
+          <text>{{item.title}}</text>
+          <text>{{item.created_at}}</text>
+        </view>
+        <view class='pic'>
+          <image src="{{imgurl+item.photos}}"></image>
+        </view>
+      </view>
+    </block>
+    <view class='nomore' wx:if="{{nomore}}">已经到底了</view>
+  </view>
+  <view wx:if="{{!showhide}}">
+    <view class='methods'>
+      <view class='comitsa'>
+        <text></text>
+        <text>选择类型</text>
+      </view>
+      <view class='allmethod'>
+        <block wx:for="{{casescate}}" wx:key="keys">
+            <button data-did="{{item.id}}" bindtap='getcid' class="{{did==item.id?'btnact':''}}">{{item.title}}</button>
+        </block>
+      </view>
+    </view>
+    <block wx:for="{{cases}}" wx:key="keys">
+      <view class='newscont' data-id="{{item.id}}" bindtap='todetailclass'>
+        <view class='newstitle'>
+          <text>{{item.title}}</text>
+          <text>{{item.created_at}}</text>
+        </view>
+        <view class='pic'>
+          <image src="{{imgurl+item.photos}}"></image>
+        </view>
+      </view>
+    </block>
+    <view class='nomore' wx:if="{{nomorel}}">已经到底了</view>
+  </view>
+
+</view>

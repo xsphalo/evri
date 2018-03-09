@@ -1,0 +1,5 @@
+<!--pages/aptitude/aptitude.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='allpage'>
+  <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+</view>

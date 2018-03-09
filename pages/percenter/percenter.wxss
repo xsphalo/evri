@@ -1,0 +1,109 @@
+/* pages/percenter/percenter.wxss */
+.allpage{
+  padding-top: 20rpx;
+  height: 100%;
+}
+.permsg{
+  padding: 0 20rpx;
+  background: #fff;
+  height: 180rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.users{
+  height: 160rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.users view:first-child{
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
+}
+.usertou{
+  margin-right: 20rpx;
+}
+.permsg .usertou image{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 5px;
+}
+.usermoney{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.usermoney image{
+  width: 33rpx;
+  height: 33rpx;
+  margin-right: 10rpx;
+  
+}
+.usermoney text{
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+}
+.pro image{
+  width: 40rpx;
+  height: 42rpx;
+}
+.gift image{
+  width: 40rpx;
+  height: 47rpx;
+}
+.aptitude image,
+.money image{
+  width: 42rpx;
+  height: 42rpx;
+}
+.about image{
+  width: 42rpx;
+  height: 46rpx;
+}
+.myproject{
+  background: #fff;
+  display: flex;
+  justify-content:  space-between;
+  align-items: center;
+  padding: 0 20rpx;
+  height: 90rpx;
+  border-bottom: 1px solid #e6e6e6;
+  padding-left: 30rpx;
+}
+.myproject image:last-child{
+  width: 18rpx;
+  height: 30rpx;
+}
+.proname text{
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
+}
+.proname image{
+  margin-right: 40rpx;
+}
+.proname,
+.convert{
+  display: flex;
+  justify-content: content;
+  align-items: center;
+}
+.convert text{
+  font-size: 14px;
+  color: #ccc;
+  margin-right: 10rpx;
+}
+.martop{
+  margin-top: 20rpx;
+}
+.nobot{
+  border-bottom: 0;
+}
+
+.promoney image{
+  height: 46rpx;
+}

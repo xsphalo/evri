@@ -1,0 +1,28 @@
+/**app.wxss**/
+@import "/wxParse/wxParse.wxss";
+page{
+  background: #f2f2f2;
+}
+.allpage{
+  background: #f2f2f2;
+  height: 100%;
+}
+.nomore{
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  color: #999;
+  background: #f2f2f2;
+  font-size: 12px;
+  font-weight: 500;
+}
+/* .newscon{
+  width: 750rpx;
+} */
+.mentionner{
+  color: #666;
+  font-size: 12px;
+  padding: 20rpx;
+  padding-top: 30rpx;
+
+}

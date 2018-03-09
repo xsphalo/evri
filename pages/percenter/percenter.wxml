@@ -1,0 +1,80 @@
+<!--pages/percenter/percenter.wxml-->
+<view class='allpage'>
+  <view class='permsg'>
+    <view class='usertou'>
+      <image src="{{member.avatar}}"></image>
+    </view>
+    <view class='users'>
+      <view>{{member.nickname}}</view>
+      <view class='usermoney'>
+        <image src="/images/coin_icon.png"></image>
+        <text>已有银江币：{{member.credit}}个</text>
+      </view>
+      <view class='usermoney'>
+        <image src="/images/money_icon.png"></image>
+        <text>可提现金额：{{member.benifit}}元</text>
+      </view>
+    </view>
+  </view>
+  <navigator url="/pages/projectlist/projectlist?status=a">
+    <view class='myproject'>
+      <view class='proname pro'>
+        <image src="/images/project_icon.png"></image>
+        <text>我的项目</text>
+      </view>
+      <image src='/images/breadcrumbs_icon.png'></image>
+    </view>
+  </navigator>
+  <view class='myproject' bindtap='present'>
+    <view class='proname gift'>
+      <image src="/images/gift_icon.png"></image>
+      <text>礼品兑换</text>
+    </view>
+    <view class='convert'>
+      <text>银江币兑换</text>
+      <image src='/images/breadcrumbs_icon.png'></image>
+    </view>
+  </view>
+  <navigator url='/pages/fenxiao/fenxiao?benifit={{member.benifit}}'>
+    <view class='myproject'>
+      <view class='proname money'>
+        <image src="/images/money_icon.png"></image>
+        <text>分销佣金</text>
+      </view>
+      <view class='convert'>
+        <text>提现分销佣金</text>
+        <image src='/images/breadcrumbs_icon.png'></image>
+      </view>
+    </view>
+  </navigator>
+  <navigator url='/pages/charge/charge'>
+    <view class='myproject nobot'>
+      <view class='proname money promoney'>
+        <image src="/images/promoney.png"></image>
+        <text>项目佣金</text>
+      </view>
+      <view class='convert'>
+        <text>提现项目佣金</text>
+        <image src='/images/breadcrumbs_icon.png'></image>
+      </view>
+    </view>
+  </navigator>
+  <navigator url='/pages/aptitude/aptitude'>
+    <view class='myproject martop'>
+      <view class='proname aptitude'>
+        <image src="/images/aptitude__icon.png"></image>
+        <text>企业资质</text>
+      </view>
+      <image src='/images/breadcrumbs_icon.png'></image>
+    </view>
+  </navigator>
+  <navigator url='/pages/aboutus/aboutus'>
+    <view class='myproject nobot'>
+      <view class='proname about'>
+        <image src="/images/about_icon.png"></image>
+        <text>关于我们</text>
+      </view>
+      <image src='/images/breadcrumbs_icon.png'></image>
+    </view>
+  </navigator>
+</view>

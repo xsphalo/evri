@@ -1,0 +1,138 @@
+/**index.wxss**/
+
+.slide-image{
+  width: 750rpx;
+  height: 300rpx;
+}
+.perselect{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 14rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+  padding-bottom: 17rpx;
+}
+.onitm{
+  text-align: center;
+}
+.onitm image{
+  width: 52rpx;
+  height: 52rpx;
+}
+.onitm text{
+  font-size: 12px;
+  color: #666;
+  display: block;
+}
+.onitm button{
+  width: 96rpx;
+  height: 94rpx;
+  background: transparent;
+  line-height: 1;
+  text-align: center;
+  padding: 0;
+}
+.onitm button image{
+  margin-bottom: 10rpx;
+}
+.onitm button:after{
+  border: 0;
+}
+.activities image{
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+  margin-right: 10rpx;
+}
+.activities{
+  margin-bottom: 20rpx;
+  height: 90rpx;
+  background: #fff;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.activities view.message{
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
+  width: 600rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.pic image{
+  width: 210rpx;
+  height: 150rpx;
+  border-radius: 5px;
+  display: block;
+}
+.newscont{
+  height: 210rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0 20rpx;
+}
+.newstitle{
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  flex-direction: column;
+  height: 210rpx;
+  width: 500rpx;
+}
+.newstitle text:first-child{
+  font-size: 16px;
+  color: #000;
+  font-weight: normal;
+  display: block;
+}
+.newstitle text:last-child{
+  font-size: 12px;
+  color: #999;
+  font-weight: normal;
+  display: block;
+}
+.botmor{
+  height: 100rpx;
+  background: #f2f2f2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160rpx;
+  height: 50rpx;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.more text{
+  display: block;
+  font-size: 12px;
+  color: #333;
+  font-weight: 500;
+  margin-right: 10rpx;
+}
+.more image{
+  width: 10rpx;
+  height: 18rpx;
+  display: block;
+}
+
+.activities swiper{
+  display: inline-block;
+  height: 90rpx;
+  width: 600rpx;
+  margin-left: 8rpx;
+}

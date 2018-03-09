@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<import src="/dist/shake/shake.wxml" />
+<template is="shake" data='{{shakeInfo}}' />
+<view class='allpage' id="allpage">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{banners}}" wx:key="keys">
+      <swiper-item>
+        <image src="{{imgurl+item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='perselect'>
+    <view class='onitm' bindtap='toimport'>
+      <image src="/images/point_icon.png"></image>
+      <text>重点领域</text>
+    </view>
+    <view class='onitm' bindtap='toclassical'>
+      <image src="/images/classic_icon.png"></image>
+      <text>经典案例</text>
+    </view>
+    <view class='onitm' bindtap='comenic'>
+      <image src="/images/aptitude_icon.png"></image>
+      <text>企业资质</text>
+    </view>
+    <view class='onitm'>
+      <button open-type='contact'>
+        <image src="/images/consult_icon.png"></image>
+        <text>在线咨询</text>
+      </button>
+    </view>
+  </view>
+  <view class='activities'>
+    <image src="/images/hot_icon.png"></image>
+    <swiper vertical="true" vertical="true" autoplay="true" circular="true" interval="2000">
+      <block wx:for="{{news}}" wx:key="keys">
+        <swiper-item>
+          <view class='message'>{{item.title}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <block wx:for="{{news}}" wx:key="keys">
+    <view class='newscont' data-id="{{item.id}}" bindtap='tonewsdetail'>
+      <view class='newstitle'>
+        <text>{{item.title}}</text>
+        <text>{{item.created_at}}</text>
+      </view>
+      <view class='pic'>
+        <image src="{{imgurl+item.photos}}"></image>
+      </view>
+    </view>
+  </block>
+  <view class="botmor">
+    <view class='more' bindtap='tomore'>
+      <text>查看更多</text>
+      <image src="/images/rights.png"></image>
+    </view>
+  </view>
+
+</view>
