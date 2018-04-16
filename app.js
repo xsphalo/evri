@@ -1,9 +1,9 @@
 //app.js
-var api = 'https://api.maidianxiu.com';
+var api = '';
 App({
   globalData: {
     url: api,
-    url2: 'http://www.maidianxiu.com',
+    url2: '',
     userInfo: null,
     locationInfo: null
   },
